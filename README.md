@@ -1,13 +1,33 @@
 # ACTIVITY-2
-#Program to display personal information
+#include <iostream>
+#include <string>
+using namespace std;
 
-# Input section
-full_name = input("Input Full name: ")
-course_yr_sec = input("Input Course, Yr. & Sec.: ")
-birthday = input("Input Birthday: ")
-motto = input("Input Motto/Motivation in Life: ")
+int main() {
+    // Declare variables to store user input
+    string fullName, courseYearSec, birthday, motto;
 
-# Output section
-print("\nHi! I'm [{}] of [{}]. Welcome to Data Structures and Algorithm!".format(full_name, course_yr_sec))
-print("My Birthday is on [{}]. and my motto/motivation in life is [{}]".format(birthday, motto))
+    // Get inputs from the user
+    cout << "Input Full name: ";
+    getline(cin, fullName);
+
+    cout << "Input Course, Yr. & Sec.: ";
+    getline(cin, courseYearSec);
+
+    cout << "Input Birthday: ";
+    getline(cin, birthday);
+
+    cout << "Input Motto/Motivation in Life: ";
+    getline(cin, motto);
+
+    // Display the collected information
+    cout << "\n===== PERSONAL INFORMATION =====" << endl;
+    cout << "Full Name          : " << fullName << endl;
+    cout << "Course, Yr. & Sec. : " << courseYearSec << endl;
+    cout << "Birthday           : " << birthday << endl;
+    cout << "Motto in Life      : " << motto << endl;
+    cout << "================================" << endl;
+
+    return 0;
+}
 

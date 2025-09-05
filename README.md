@@ -1,8 +1,13 @@
 # ACTIVITY-2
-Input Full name: PAGALAN KRISTEL
-Input Course, Yr. & Sec.: BSIT2J
-Input Birthday: OCT 11 2004
-Input Motto/Motivation in Life: TRUST THE TIMING OF YOUR LIFE
+#Program to display personal information
 
-Hi! I'm [PAGALAN KRISTEL] of [BSIT2J]. Welcome to Data Structures and Algorithm!
-My Birthday is on [OCT 11 2004]. and my motto/motivation in life is [TRUST THE TIMING OF YOUR LIFE]
+# Input section
+full_name = input("Input Full name: ")
+course_yr_sec = input("Input Course, Yr. & Sec.: ")
+birthday = input("Input Birthday: ")
+motto = input("Input Motto/Motivation in Life: ")
+
+# Output section
+print("\nHi! I'm [{}] of [{}]. Welcome to Data Structures and Algorithm!".format(full_name, course_yr_sec))
+print("My Birthday is on [{}]. and my motto/motivation in life is [{}]".format(birthday, motto))
+
